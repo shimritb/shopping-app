@@ -1,0 +1,17 @@
+<!-- <p>
+  <li *ngFor="let Product of ProductList">
+    </li>
+</p> -->
+
+<!-- <ng-container *ngIf="!(loading$ | async); else loadingTpl">
+
+  <input placeholder="Search Product.." [formControl]="search"> -->
+  <section class="products" fxLayout fxLayoutAlign="center center" fxLayoutGap="20px">
+
+    <app-product *ngFor="let product of products" [product]="product"></app-product>
+  </section>
+  
+  <!-- </ng-container> -->
+  
+  <!-- <ng-template #loadingTpl>...</ng-template> -->
+  

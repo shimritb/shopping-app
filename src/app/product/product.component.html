@@ -1,0 +1,13 @@
+
+  <mat-card>
+    <img fxFlexFill mat-card-lg-image src="https://4.imimg.com/data4/CO/YS/MY-29352968/samsung-desktop-computer-500x500.jpg">
+    <mat-card-footer>
+    <mat-card-title fxLayoutAlign="center">{{product.name}}</mat-card-title>
+    <mat-card-content fxLayoutAlign="center">{{product.price}}</mat-card-content>
+    <mat-card-content fxLayoutAlign="center">{{product.lastEdit}}</mat-card-content>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="center">
+      <button mat-raised-button (click)="onAddToCart()">Add to cart</button>
+    </mat-card-actions>
+  </mat-card-footer>
+  </mat-card>
+

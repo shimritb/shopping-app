@@ -1,0 +1,9 @@
+.products {
+    display: flex;
+    flex-flow: row wrap; /*flex-direction flex-wrap*/
+    align-items: center; /*only refers to the position of our items relating to the cross axis.*/
+    justify-content: flex-start; /*only refers to the position of our items relating to the main axis.*/
+    align-content: space-between;
+    border-bottom-color: black;
+   
+}
