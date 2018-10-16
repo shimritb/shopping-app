@@ -10,7 +10,8 @@ import {
  MatToolbarModule,
  MatListModule,
  MatOptionModule,
- MatSelectModule} from '@angular/material';
+ MatSelectModule,
+ } from '@angular/material';
 
 @NgModule({
     // tslint:disable-next-line:max-line-length
@@ -25,7 +26,8 @@ import {
         MatToolbarModule,
         MatListModule,
         MatOptionModule,
-        MatSelectModule],
+        MatSelectModule,
+        ],
     // tslint:disable-next-line:max-line-length
     exports: [
         MatCardModule,
@@ -38,7 +40,8 @@ import {
         MatToolbarModule,
         MatListModule,
         MatOptionModule,
-        MatSelectModule]
+        MatSelectModule,
+        ]
 })
 export class MaterialModule {
 

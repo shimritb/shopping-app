@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AuthService } from '../auth.service';
+
+
 
 @Component({
   selector: 'app-signup',
@@ -7,17 +10,23 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  countries: string[] = [
-    'Israel', 'USA', 'china', 'Greec', 'Italy', 'UK'
+  cities: string[] = [
+    'Tel-aviv', 'rishon-lezion', 'ramat-gan', 'givatayim', 'hifa', 'eilat'
+  ];
+  cellCodes: string[] = [
+    '052', '054', '050', '058'
   ];
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form);
+    this.authService.registerUser({
+      email: form.value.email,
+      password: form.value.password
+    });
   }
 
 }
